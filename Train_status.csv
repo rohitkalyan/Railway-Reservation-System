@@ -1,0 +1,9 @@
+TrainDate,TrainName,PremiumSeatsAvailable,GenSeatsAvailable,PremiumSeatsOccupied,GenSeatsOccupied
+2022-02-19,Orient Express,10,10,0,0
+2022-02-20,Flying Scottsman,8,5,2,5
+2022-02-21,Maharaja Express,7,6,3,4
+2022-02-21,Golden Chariot,6,3,4,7
+2022-02-22,Golden Arrow,8,7,2,3
+2022-03-10,Golden Arrow,8,5,2,5
+2022-02-21,Maharaja Express,7,6,3,4
+2022-02-21,Flying Scottsman,5,5,5,5

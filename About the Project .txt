@@ -1,0 +1,44 @@
+Railway Reservation System
+This project is a graphical user interface (GUI) application for managing a railway reservation system, developed using Python's tkinter library for the frontend and sqlite3 for the database operations. The application allows users to perform various queries related to train bookings, passenger information, and ticket cancellations.
+
+Key Components
+Database Connection:
+
+The application connects to an SQLite database (rrs.db), where all the information about trains, passengers, and bookings is stored.
+Queries:
+
+Query1: Finds all trains booked by a passenger based on their first and last name.
+Query2: Lists all confirmed passengers on a given date.
+Query3: Finds passengers within the age range of 50-60 and lists their booking details.
+Query4: Lists the count of passengers for each train.
+Query5: Lists all confirmed passengers on a specific train.
+Query6: Cancels a ticket for a passenger based on their SSN and updates the waiting list accordingly.
+GUI Components:
+
+The main window (root) is created using tkinter.Tk().
+Labels, entry fields, and buttons are organized using grid layout to provide input fields for various queries.
+A Listbox widget is used to display the results of the queries.
+Custom fonts are applied to titles for better visual hierarchy.
+Functions:
+
+Each query function (query1, query2, query3, query4, query5, query6) retrieves data from the database based on user input, processes the results, and updates the Listbox with the query results.
+Query1: Uses first and last name to find trains booked by a passenger.
+Query2: Uses a date to list confirmed passengers on that date.
+Query3: Uses age to find passengers within the specified range and their booking details.
+Query4: Counts and lists passengers for each train.
+Query5: Uses train name to list confirmed passengers for that train.
+Query6: Cancels a passenger's ticket by SSN, updates the waiting list, and promotes the first waiting list passenger to confirmed if available.
+How It Works
+User Interaction:
+
+The user inputs data into the provided fields (e.g., passenger's name, date, age, train name, or SSN) and clicks the corresponding button to execute a query.
+Database Queries:
+
+The application constructs SQL queries based on user input and executes them using the sqlite3 library.
+Results are fetched from the database and displayed in the Listbox.
+Error Handling:
+
+If no results are found for a query, the application displays "Nothing to show" in the Listbox.
+For Query3, if the age is outside the specified range (50-60), it displays "Nothing to show."
+Conclusion
+This project provides a simple yet functional railway reservation system, demonstrating the use of Python for database interactions and GUI development. It offers essential features for querying and managing train bookings and passenger information, making it a useful tool for railway reservation management.
